@@ -7,9 +7,14 @@ module Interfaces
 If you've done enough Idris, you've surely heard that interfaces are just records with syntax sugar. But what is that syntax sugar, and why should you care? Most of the time you shouldn't care, but there are some very useful techniques you can use if you scrap some of the sugar.
 
 First of all I'll define some terms:
-- implicit argument: an argument which Idris fills in using various techniques. Usually this is done by checking the types of the arguments and expected return type to try and uniquely determine the value - this is how generics in Idris work. These can be written as `{0 a : Type} -> ...`, `{len : Nat} -> ...` or `forall x. ...`.
-- auto implicit argument: This is a type of implicit arg which Idris fills in using proof search, ie Idris uses provided definitions, interface implementations and local variables to try and fill in the argument. These can be written as `{auto _ : x === y} -> ...` or `Functor f =>`.
-- default implicit argument: When writing the function, you can provide a default value for the argument, which will be used unless it is overwriten at the call site. These are written as `{default False pretty : Bool} -> ...`
+implicit argument
+: an argument which Idris fills in using various techniques. Usually this is done by checking the types of the arguments and expected return type to try and uniquely determine the value - this is how generics in Idris work. These can be written as `{0 a : Type} -> ...`, `{len : Nat} -> ...` or `forall x. ...`.
+
+auto implicit argument
+: This is a type of implicit arg which Idris fills in using proof search, ie Idris uses provided definitions, interface implementations and local variables to try and fill in the argument. These can be written as `{auto _ : x === y} -> ...` or `Functor f =>`.
+
+default implicit argument
+: When writing the function, you can provide a default value for the argument, which will be used unless it is overwriten at the call site. These are written as `{default False pretty : Bool} -> ...`
 
 Let's take the following interface and manually desugar it one step at a time. As we go I'll explain when this might be useful.
 
