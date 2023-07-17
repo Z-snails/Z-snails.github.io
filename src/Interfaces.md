@@ -7,6 +7,7 @@ module Interfaces
 If you've done enough Idris, you've surely heard that interfaces are just records with syntax sugar. But what is that syntax sugar, and why should you care? Most of the time you shouldn't care, but there are some very useful techniques you can use if you scrap some of the sugar.
 
 First of all I'll define some terms:
+
 implicit argument
 : an argument which Idris fills in using various techniques. Usually this is done by checking the types of the arguments and expected return type to try and uniquely determine the value - this is how generics in Idris work. These can be written as `{0 a : Type} -> ...`, `{len : Nat} -> ...` or `forall x. ...`.
 
