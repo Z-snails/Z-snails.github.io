@@ -1,3 +1,10 @@
+---
+layout: post
+title:  "Interface desugaring in Idris 2"
+date:   2023-07-17
+categories: idris-2
+---
+
 # Interface Desugaring
 
 <!-- idris
@@ -66,7 +73,8 @@ interfaceListImpl = MkInterface
 
 As `Nat` has (at least) 2 sensible and valid `Semigroup` implementations, it makes sense to define them both, and allow other programmers to pick which one to use; these implementations are part of Idris's prelude.
 
-Another possible use case is writing helper functions to simplify writing implementations, which is often done when implementing `Applicative` and `Monad`. I show one way to do this in [ApplicativeMonad.idr](./ApplicativeMonad.idr)
+Another possible use case is writing helper functions to simplify writing implementations, which is often done when implementing `Applicative` and `Monad`.
+I show one way to do this in [Appendix A](#appendix-a)
 
 Now to the interface itself:
 
@@ -142,3 +150,39 @@ Prelude.Interfaces.Constraint (Functor f) : Applicative f -> Functor f
 ```
 
 `Constraint (Functor f)` isn't the actual machine name; it's a display name, which helps the programmer understand, as machine names aren't very helpful or readable.
+
+# Appendix A {#appendix-a}
+
+```idris
+||| Create a Functor using >>= and pure
+||| Ideally this would take `Monad` as an constraint/auto implicit argument,
+||| but Monad requires Applicative first so that unfortunately doesn't work.
+monadToFunctor :
+    (pure : forall a. a -> f a) ->
+    (bind : forall a, b. f a -> (a -> f b) -> f b) ->
+    Functor f
+monadToFunctor pure bind =
+    let map : forall a, b. (a -> b) -> (f a -> f b)
+        map f mx = mx `bind` \x => pure (f x)
+     in MkFunctor map
+
+||| Create an applicative using bind (>>=) and pure.
+monadToApplicative :
+    Functor f =>
+    (pure : forall a. a -> f a) ->
+    (bind : forall a, b. f a -> (a -> f b) -> f b) ->
+    Applicative f
+monadToApplicative pure bind =
+    let app : forall a, b. f (a -> b) -> f a -> f b
+        app mf mx =
+            mf `bind` \f => map f mx
+     in MkApplicative pure app
+
+-- %hint
+functorList : Functor List
+functorList = monadToFunctor pure (>>=)
+
+-- %hint
+applicativeList : Applicative List
+applicativeList = monadToApplicative pure (>>=)
+```
