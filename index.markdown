@@ -17,5 +17,5 @@ Here are the slides and additional material from some of the talks I've given.
 
 - _Elaborating Dependent Type Theory_ presented during an internship at Aarhus University (TODO)
 - _Context-Free languages: Expressionally_ presented for the Oxford Computing Society (TODO)
-  - Additional material (also TODO)
+  - Supplementary material is available [here](/assets/mu-regular-expressions.pdf)
 
