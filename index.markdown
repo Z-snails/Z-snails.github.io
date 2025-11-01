@@ -13,9 +13,8 @@ My main interests are in programming languages, including (dependent) type theor
 
 # Talks
 
-Here are the slides and additional material from some of the talks I've given.
-
-- _Elaborating Dependent Type Theory_ presented during an internship at Aarhus University (TODO)
-- _Context-Free languages: Expressionally_ presented for the Oxford Computing Society (TODO)
-  - Supplementary material is available [here](/assets/mu-regular-expressions.pdf)
+- _Elaborating Dependent Type Theory_ --- an overview of the techniques used by type checker for dependently typed languages to infer types and even terms.
+  Presented at the Aarhus University's Logic and Semantics group seminar while I was doing an internship there ([slides](/assets/elab-dtt-slides.pdf))
+- _Context-Free languages: Expressionally_ --- an introduction to $\mu$-regular expressions and fixed point theory
+  Presented for the Computing Society at Oxford University ([slides](/assets/cfl-expressionally.pdf), [supplementary material](/assets/mu-regular-expressions.pdf))
 
