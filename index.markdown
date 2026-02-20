@@ -19,8 +19,10 @@ The code is available [here](https://github.com/Z-snails/mitten_preorder/tree/zs
 
 # Talks
 
-- _Elaborating Dependent Type Theory_ --- an overview of the techniques used by type checkers for dependently typed languages to infer types and terms.
-  Presented at the Aarhus University's Logic and Semantics group seminar ([slides](/assets/elab-dtt-slides.pdf))
+- Aarhus University Logic and Semantics group seminar: _Elaborating Dependent Type Theory_ --- an overview of the techniques used by type checkers for dependently typed languages to infer types and terms.
+  ([slides](/assets/elab-dtt-slides.pdf))
 - _Context-Free languages: Expressionally_ --- an introduction to $\mu$-regular expressions and fixed point theory.
   Presented for the Computing Society at Oxford University ([slides](/assets/cfl-expressionally.pdf), [supplementary material](/assets/mu-regular-expressions.pdf))
+- SPLS February 2026: _Holes in Elaboration for Multimodal Dependent Type Theory_ --- an explanation of the difficulties faced when extending an elaboration algorithm to MTT.
+  ([slides](/assets/spls-feb-2026-talk.pdf), [spls website](https://spli.scot/spls/meetings/2026/february/))
 
