@@ -14,15 +14,14 @@ My main interests are in programming languages, including type theory and formal
 
 # Previous Work
 
-- During the summer of 2025, I completed a research internship at Aarhus University supervised by Daniel Gratzer focusing on elaboration for [Multimodal Dependent Type Theory](https://arxiv.org/abs/2011.15021).
+- August-September 2025: I completed a research internship at Aarhus University supervised by Daniel Gratzer focusing on elaboration for [Multimodal Dependent Type Theory](https://arxiv.org/abs/2011.15021).
 The code is available [here](https://github.com/Z-snails/mitten_preorder/tree/zs-elaboration) and the (mostly complete) report is available [here](/assets/mtt-elaboration-report.pdf).
 
 # Talks
 
-- Aarhus University Logic and Semantics group seminar: _Elaborating Dependent Type Theory_ --- an overview of the techniques used by type checkers for dependently typed languages to infer types and terms.
-  ([slides](/assets/elab-dtt-slides.pdf))
-- _Context-Free languages: Expressionally_ --- an introduction to $\mu$-regular expressions and fixed point theory.
-  Presented for the Computing Society at Oxford University ([slides](/assets/cfl-expressionally.pdf), [supplementary material](/assets/mu-regular-expressions.pdf))
 - SPLS February 2026: _Holes in Elaboration for Multimodal Dependent Type Theory_ --- an explanation of the difficulties faced when extending an elaboration algorithm to MTT.
   ([slides](/assets/spls-feb-2026-talk.pdf), [spls website](https://spli.scot/spls/meetings/2026/february/))
-
+- October 2025: _Context-Free languages: Expressionally_ --- an introduction to $\mu$-regular expressions and fixed point theory.
+  Presented for the Computing Society at Oxford University ([slides](/assets/cfl-expressionally.pdf), [supplementary material](/assets/mu-regular-expressions.pdf))
+- Aarhus University LogSem group seminar September 2025: _Elaborating Dependent Type Theory_ --- an overview of the techniques used by type checkers for dependently typed languages to infer types and terms.
+  ([slides](/assets/elab-dtt-slides.pdf))
