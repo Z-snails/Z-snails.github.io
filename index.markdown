@@ -4,7 +4,9 @@
 # To run: bundle exec jekyll serve
 
 layout: home
-title: Zoe Stafford's Wonderous Website and Blog
+title: Zoe Stafford's Website and Blog
+description: Zoe Stafford is a Computer Science student at the University of Oxford with an interest in type theory, logic and formal language theory.
+permalink: /
 ---
 
 # About me

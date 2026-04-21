@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /assets/
+Sitemap: https://Z-snails.github.io/sitemap.xml
