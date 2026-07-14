@@ -18,6 +18,7 @@ My main interests are in programming languages, including type theory and formal
 
 - August-September 2025: I completed a research internship at Aarhus University supervised by Daniel Gratzer focusing on elaboration for [Multimodal Dependent Type Theory](https://arxiv.org/abs/2011.15021).
 The code is available [here](https://github.com/Z-snails/mitten_preorder/tree/zs-elaboration) and the (mostly complete) report is available [here](/assets/mtt-elaboration-report.pdf).
+- March-April 2025: I was a research assistant (intern) for Ohad Kammar at the University of Edinburgh, working on type theory, regular languages and metaprogramming.
 
 # Talks
 
