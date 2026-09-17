@@ -16,6 +16,7 @@ My main interests are in programming languages, including type theory and formal
 
 # Previous Work
 
+- July-August 2026: I implemented a type checker for Dependent Linear Type Theory, supervised by Max Doré.
 - You can read my Part B (Bachelor's) project report _Resurrecting Extinct Computers: the Symbolics Lisp Machine_ [here](/assets/part-b-project.pdf)
 - August-September 2025: I completed a research internship at Aarhus University supervised by Daniel Gratzer focusing on elaboration for [Multimodal Dependent Type Theory](https://arxiv.org/abs/2011.15021).
 The code is available [here](https://github.com/Z-snails/mitten_preorder/tree/zs-elaboration) and the (mostly complete) report is available [here](/assets/mtt-elaboration-report.pdf).
